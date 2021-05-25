@@ -1,5 +1,13 @@
 <template>
   <button
+    class="
+      py-1 px-3
+      text-white
+      rounded-md
+      focus:outline-none active:outline-none hover:bg-blue-600
+      transition duration-200
+    "
+    :class="!active ? 'bg-gray-300 pointer-events-none ' : 'bg-blue-500'"
     :disabled="!active"
     @click="$emit('clicked', icon)"
   >
