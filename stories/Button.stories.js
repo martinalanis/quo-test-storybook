@@ -19,6 +19,9 @@ export default {
       },
       options: [true, false],
       description: 'Current state: true | false'
+    },
+    clicked: {
+      description: 'Emits value of the button: + | -'
     }
   }
 }
