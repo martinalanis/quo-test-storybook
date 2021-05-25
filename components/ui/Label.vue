@@ -2,9 +2,10 @@
   <div
     class="
       relative
-      flex
+      bg-white
+      flex justify-center
       border
-      h-11
+      h-10
       px-2
     "
     :class=" label ? 'items-end' : 'items-center' "
@@ -12,7 +13,8 @@
     <small
       class="
         absolute
-        top-0 left-2
+        top-0
+        text-xs
       "
     >
       {{ label }}

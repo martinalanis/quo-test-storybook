@@ -1,15 +1,16 @@
 <template>
   <button
     class="
-      py-1 px-3
+      w-10
+      px-3
       text-white
-      rounded-md
+      text-2xl
       focus:outline-none active:outline-none hover:bg-blue-600
       transition duration-200
     "
-    :class="!active ? 'bg-gray-300 pointer-events-none ' : 'bg-blue-500'"
+    :class="!active ? 'bg-blue-300 pointer-events-none ' : 'bg-blue-500'"
     :disabled="!active"
-    @click="$emit('clicked', icon)"
+    @click="$emit('clicked')"
   >
     {{ localIcon }}
   </button>

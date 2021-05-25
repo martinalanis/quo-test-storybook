@@ -1,7 +1,7 @@
 import Label from '../components/ui/Label.vue'
 
 export default {
-  title: 'Components/Label',
+  title: 'Base Components/Label',
   component: Label,
   argTypes: {
     number: {
