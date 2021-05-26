@@ -1,8 +1,8 @@
 <template>
-  <div class="flex">
+  <div class="relative flex">
     <Button
       icon="minus"
-      :active="localValue"
+      :active="!!localValue"
       @clicked="substract"
     />
     <Label class="w-20" :number="localValue" :label="label" />
@@ -47,7 +47,6 @@ export default {
   },
   methods: {
     add () {
-      console.log('add')
       this.localValue = this.localValue + 1
     },
     substract () {
